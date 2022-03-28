@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ScenarioComponent } from './scenario/scenario.component';
 
 const routes: Routes = [
-  { path: 'scenario', component: ScenarioComponent }
+  { path:'', redirectTo:'scenario',pathMatch: 'full'},
+  { path: 'scenario', component: ScenarioComponent },
 ];
 
 @NgModule({
